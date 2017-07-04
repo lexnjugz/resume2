@@ -1,0 +1,371 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+    <head>
+
+        <title>Geneva - Business vCard Template</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="style/jquery-ui/smoothness/jquery-ui.css"/> 
+        <link rel="stylesheet" type="text/css" href="style/base.css"/> 
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cuprum"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+
+        <script type="text/javascript" src="script/jquery.min.js"></script>
+        <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="script/main.js"></script>
+
+    <!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+    
+    <body>
+    
+        <div class="main clear-fix overflow-fix box-center">
+            
+            <div class="header clear-fix overflow-fix">
+                
+                <div class="layout-50-left">
+                    <a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-logo"></a>
+                </div>
+                
+                <div class="layout-50-right">
+                    
+                    <ul class="no-list header-menu">
+                        <li><a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-menu-contact-us">Contact us</a></li>
+                        <li><a href="http://twitter.com/QuanticaLabs" class="header-menu-twitter"></a></li>
+                        <li><a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-menu-envato"></a></li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="content">
+                
+                <div class="tabs">
+                    
+                    <ul>
+                        <li><a href="#tab-1">About</a></li>
+                        <li><a href="#tab-2">CSS Styles</a></li>
+                        <li><a href="#tab-3">HTML Structure</a></li>
+                        <li><a href="#tab-4">Javascript Files</a></li>
+                        <li><a href="#tab-5">Plugins</a></li>
+                        <li><a href="#tab-6">PSD Files</a></li>
+                        <li><a href="#tab-7">Fonts used</a></li>
+                        <li><a href="#tab-8">Credits</a></li>
+						<li><a href="#tab-9">Version history</a></li>
+                        <li><a href="#tab-10">Support</a></li>
+                    </ul>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-1">
+                        
+                        <h1>About</h1>      
+                        
+                        <p>
+                            Geneva is a minimalist personal or corporate vCard template based on nine tiles. 
+                            Each tile is a separate page, including typical descriptive pages like about, 
+                            services or testimonials, portfolio pages with image and video support including build-in 
+                            lightbox, pricing page with pricing table and contact page with working contact form and map 
+                            of location. Included PSD source file allows you to customize this template to your needs.                         
+                        </p>
+                        
+						<ul class="documentation">
+                            <li>jQuery Powered</li>
+                            <li>Build-in Lightbox</li>
+                            <li>Working Contact Form</li>
+                            <li>Back / Next Browser History Support</li>
+                            <li>Font Face Fonts</li>
+                            <li>Valid XHTML Code</li>
+                            <li>PSD Source Included</li>
+                            <li>Documentation Included</li>
+						</ul>	
+                        
+                    </div>
+                    
+                    <!-- #### -->
+
+                    <div id="tab-2">
+                        
+                        <h1>CSS Styles</h1>
+						<p>The project uses the following cascade of template styles (in order):</p>
+						<ul class="documentation">
+							<li><span class="name">jquery.qtip.css</span> - default styles for tooltips (overwritten in base.css),</li>
+							<li><span class="name">jquery.jScrollPane.css</span> - default styles for scrollbars (overwritten in base.css),</li>
+							<li><span class="name">fancybox/jquery.fancybox.css</span> - default styles for fancybox,</li>
+							<li><span class="name">base.css</span> - base styles for the entire project,</li>
+							<li><span class="name">page.css</span> - styles for subpages.</li>
+						</ul>						
+						<p>All CSS files are located in <span class="name">/style</span> directory.</p>
+
+                    </div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-3">
+                        
+                        <h1>HTML Structure</h1>
+                        
+                        <p>
+                            HTML page of this project is divided by three section: header, content (main section) and footer.<br/>
+                            When the box is opened, script (<span class="name">geneva.js</span>) loads the page specified by the hash of clicked box.<br/> 
+                            For example, if you clicked <span class="name">About</span> box, the page <span class="name">/page/about.html</span> is loaded. 
+                            All subpages are stored in <span class="name">/page</span> directory.<br/><br/> 
+                            After the page is loaded the script <span class="name">page/script/main.js</span> is running.
+                            Additionally for each page can be loaded locally JS script from path <span class="name">page/script</span>.<br/><br/>
+                            Configuration that specifies which files have to be loaded is located in the file <span class="name">/script/main.js</span>
+                        </p>
+                        
+                        <br/>   
+						<h4>Header</h4>                        
+<pre class="code">
+&lt;!-- Header --&gt;
+&lt;div class=&quot;header overflow-fix clear-fix layout-9010&quot;&gt;
+
+	&lt;!-- Logo --&gt;
+	&lt;div class=&quot;layout-9010-left&quot;&gt;
+		&lt;a href=&quot;#/main&quot; class=&quot;header-logo&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;!-- /Logo --&gt;
+
+	&lt;!-- Close Button --&gt;
+	&lt;div class=&quot;layout-9010-right&quot;&gt;
+		&lt;a href=&quot;#/main&quot; class=&quot;geneva-close-button&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;!-- /Close Button --&gt;
+
+&lt;/div&gt;
+&lt;!-- /Header --&gt;
+</pre>
+                        <br/>
+                        <h4>Main section</h4>                        
+<pre class="code">
+&lt;div id=&quot;geneva&quot;&gt;
+
+	&lt;!-- Box Menu --&gt;
+	&lt;ul id=&quot;geneva-box-menu&quot;&gt;
+		&lt;li id=&quot;geneva-box-menu-element-about&quot;&gt;
+			&lt;a href=&quot;#/about&quot;&gt;
+				&lt;span class=&quot;title&quot;&gt;About Us&lt;/span&gt;
+				&lt;span class=&quot;subtitle&quot;&gt;a brief info about us&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li id=&quot;geneva-box-menu-element-services&quot;&gt;
+			&lt;a href=&quot;#/services&quot;&gt;
+				&lt;span class=&quot;title&quot;&gt;Our services&lt;/span&gt;
+				&lt;span class=&quot;subtitle&quot;&gt;what we do&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li id=&quot;geneva-box-menu-element-process&quot;&gt;
+			&lt;a href=&quot;#/process&quot;&gt;
+				&lt;span class=&quot;title&quot;&gt;The Process&lt;/span&gt;
+				&lt;span class=&quot;subtitle&quot;&gt;our approach&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;!-- ... --&gt;
+	&lt;/ul&gt;
+	&lt;!-- /Box Menu --&gt;
+
+	&lt;!-- List Menu --&gt;
+	&lt;ul id=&quot;geneva-list-menu&quot;&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#/about&quot; id=&quot;geneva-list-menu-element-about&quot;&gt;
+				&lt;span&gt;&lt;/span&gt;About Us
+			&lt;/a&gt;
+		&lt;/li&gt;                       
+		&lt;li&gt;
+			&lt;a href=&quot;#/services&quot; id=&quot;geneva-list-menu-element-services&quot;&gt;
+				&lt;span&gt;&lt;/span&gt;Our services
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#/process&quot; id=&quot;geneva-list-menu-element-process&quot;&gt;
+				&lt;span&gt;&lt;/span&gt;The Process
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;!-- ... --&gt;
+	&lt;/ul&gt;
+	&lt;!-- /List Menu --&gt;
+
+	&lt;!-- Content --&gt;
+	&lt;div id=&quot;geneva-window&quot;&gt;
+		&lt;div id=&quot;geneva-page&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /Content --&gt;
+
+	&lt;!-- Preloader --&gt;
+	&lt;div class=&quot;preloader&quot;&gt;&lt;/div&gt;
+	&lt;!-- /Preloader --&gt;
+
+&lt;/div&gt;
+</pre>
+                        <br/>
+                        <h4>Footer</h4>                        
+                        
+<pre class="code">
+&lt;!-- Footer --&gt;
+&lt;div class=&quot;footer box-center layout-7030 clear-fix&quot;&gt;
+
+	&lt;!-- Latest tweets --&gt;
+	&lt;div class=&quot;layout-7030-left&quot;&gt;
+		&lt;div id=&quot;latest-tweets&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /Latest tweets --&gt;
+
+	&lt;!-- Social icons --&gt;
+	&lt;div class=&quot;layout-7030-right position-relative&quot;&gt;
+
+		&lt;ul class=&quot;no-list social-list&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-rss&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-google&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-xing&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;div class=&quot;connect&quot;&gt;&lt;/div&gt;
+
+	&lt;/div&gt;
+	&lt;!-- /Social icons --&gt;
+
+&lt;/div&gt;
+&lt;!-- /Footer --&gt;
+</pre>
+                        
+                    </div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-4">
+                        
+                        <h1>Javascript Files</h1>
+						<h4>Plugins and library:</h4>
+						<ul class="documentation">
+							<li><span class="name">jQuery v1.6.4 (minified)</span> - jQuery JavaScript Library, <a href="http://jquery.com/">http://jquery.com/</a>,</li>
+							<li><span class="name">JavaScript Linkify v0.3</span> - <a href="http://benalman.com/projects/javascript-linkify/">http://benalman.com/projects/javascript-linkify/</a>,</li>
+							<li><span class="name">jQuery Easing v1.3</span> - <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a>,</li>
+							<li><span class="name">jQuery blockUI v2.39</span> - <a href="http://malsup.com/jquery/block/">http://malsup.com/jquery/block/</a>,</li>
+							<li><span class="name">jQuery bxSlider v3.0</span> - <a href="http://bxslider.com/">http://bxslider.com/</a>,</li>
+							<li><span class="name">qTip2 (minified)</span> - Pretty powerful tooltips, <a href="http://craigsworks.com/projects/qtip2/">http://craigsworks.com/projects/qtip2/</a>,</li>
+							<li><span class="name">jQuery FancyBox v1.3.4</span> - Simple and fancy lightbox alternative, <a href="http://fancybox.net/">http://fancybox.net/</a>,</li>
+							<li><span class="name">jQuery MouseWheel v3.0.5</span> - <a href="http://brandonaaron.net/code/mousewheel/demos">http://brandonaaron.net/code/mousewheel/demos</a>,</li>
+							<li><span class="name">jQuery BBQ v1.2.1 (minified)</span> - Back Button &amp; Query Library, <a href="http://benalman.com/projects/jquery-bbq-plugin/">http://benalman.com/projects/jquery-bbq-plugin/</a>,</li>
+							<li><span class="name">jScrollPane v2.0.0 (minified)</span> - <a href="http://jscrollpane.kelvinluck.com/">http://jscrollpane.kelvinluck.com/</a>,</li>
+						</ul>
+                        
+                        <br/>
+						
+						<h4>Other files:</h4>
+						<ul class="documentation">
+ 							<li><span class="name">script.js</span> - script contains a few simple functions used in this project,</li>	
+							<li><span class="name">main.js</span> - script contains a call jquery plugins which are used in main page,</li>
+							<li><span class="name">geneva.js</span> - script contains plugins used to handle animations.</li>
+						</ul>
+                        
+                    </div>
+                 
+                    <!-- #### -->
+                    
+                    <div id="tab-5">
+                        <h1>Plugins</h1>
+                        <h4>Contact form</h4>
+						<p class="mp-top-0">
+							This project includes a contact form ready for use.<br/> 
+							All you need is to configure some constants located in file <span class="name">plugin/contact-form/config.php</span>:
+						</p>
+						<ul class="documentation">
+							<li><span class="name">_from_name</span> - name of your e-mail eg. &quot;My Company&quot;,</li>
+							<li><span class="name">_from_email</span> - sender e-mail eg. &quot;mycompany@gmail.com&quot;,</li>
+							<li><span class="name">_to_name</span> - name of recipient eg. &quot;My Company&quot;,</li>
+							<li><span class="name">_to_email</span> - e-mail of recipent eg. &quot;mycompany@gmail.com&quot;,</li>
+							<li><span class="name">_host</span> - your SMTP host eg. &quot;gmail.com&quot;,</li>
+							<li><span class="name">_username</span> - login to your e-mail account eg. &quot;mycompany&quot;,</li>
+							<li><span class="name">_password</span> - password to your e-mail account.</li>
+						</ul>
+                    </div>
+                    
+                    <!-- #### -->
+
+                    <div id="tab-6">
+                        <h1>PSD Files</h1>
+                        <p>Template contains layered and organized PSD source file - <span class="name">geneva.psd</span> with predefined slices.</p>
+                    </div>
+                    
+                    <!-- #### -->
+                    
+					<div id="tab-7">
+						<h1>Fonts used</h1>
+						<ul class="documentation">
+							<li><span class="name">Terminal Dosis</span> By Pablo Impallari, SIL Open Font License, 1.1<br/><a href="http://www.google.com/webfonts/specimen/Terminal+Dosis">http://www.google.com/webfonts/specimen/Terminal+Dosis</a>,</li>
+							<li><span class="name">DearJoe 5 Casual</span> By JOEBOB graphics<br/><a href="http://www.dafont.com/dear-joe-5-casual.font">http://www.dafont.com/dear-joe-5-casual.font</a>,</li>
+							<li><span class="name">Arial</span> - default system font.</li>
+						</ul>
+					</div>
+                    
+                    <!-- #### -->
+                    
+					<div id="tab-8">
+						<h1>Credits</h1>
+						<h4>Icons</h4>
+						<p>All icons by QuanticaLabs. Icons are an integral part of this template, please do not use it separately for other purposes.</p>
+						<h4>Images</h4>
+						<p>All images under Creative Commons (Attribution 2.0 Generic / Attribution-ShareAlike 2.0 Generic) for commercial use.</p>
+						<ul class="documentation">
+							<li><span class="name">Sample Image: Free Delicious Raindrops on Rainscreen Depth of Field</span> By Pink Sherbet Photography<br/><a href="http://www.flickr.com/photos/pinksherbet/2386993643/">http://www.flickr.com/photos/pinksherbet/2386993643/</a>,</li>
+							<li><span class="name">Sample Image: Self Portrait</span> By Anthony Cain<br/><a href="http://www.flickr.com/photos/acain/2224100039/">http://www.flickr.com/photos/acain/2224100039/</a>,</li>
+							<li><span class="name">Sample Image: Portrait of a Man - Part 2.1</span> By rakastajatar<br/><a href="http://www.flickr.com/photos/katiegail/431702206/">http://www.flickr.com/photos/katiegail/431702206/</a>,</li>
+							<li><span class="name">Sample Image: My State Farm Insurance Agent #93008</span> By mark sebastian<br/><a href="http://www.flickr.com/photos/markjsebastian/4231955649/in/photostream/">http://www.flickr.com/photos/markjsebastian/4231955649/in/photostream/</a>,</li>
+							<li><span class="name">Sample Image: IMG_2303</span> By mark sebastian<br/><a href="http://www.flickr.com/photos/markjsebastian/5002818539/in/photostream/">http://www.flickr.com/photos/markjsebastian/5002818539/in/photostream/</a>,</li>
+							<li><span class="name">Sample Image: Laziest. Model. Ever.</span> By mark sebastian<br/><a href="http://www.flickr.com/photos/markjsebastian/2733975281/in/photostream/">http://www.flickr.com/photos/markjsebastian/2733975281/in/photostream/</a>,</li>
+							<li><span class="name">Sample Image: Prodigy</span> By mark sebastian<br/><a href="http://www.flickr.com/photos/markjsebastian/2124451260/in/photostream/">http://www.flickr.com/photos/markjsebastian/2124451260/in/photostream/</a>.</li>
+						</ul>
+					</div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-9">
+                        <h1>Version history</h1>
+						<p><b>22 March 2012</b>, ver. 1.2</p>
+						<ul class="documentation">
+							<li>Fixed small bug in tweets,</li>
+							<li>Added SEO support for links.</li>
+						</ul>	
+						<p><b>11 March 2012</b>, ver. 1.1</p>
+						<ul class="documentation">
+							<li>Added support for Vimeo videos,</li>
+							<li>Added <span class="name">jquery.ba-bqq.min.js</span> plugin,</li>
+							<li>Changing HTML/CSS structure of <span class="name">#geneva-box-menu</span> menu,</li>
+							<li>Few small bugs fixed.</li>
+						</ul>
+						<p><b>13 February 2012</b>, ver. 1.0, First release</p>
+					</div>
+					
+                    <!-- #### -->
+                    
+                    <div id="tab-10">
+                        <h1>Support</h1>
+                        If you have any questions, please use our profile contact form on Envato (<a href="http://themeforest.net/user/QuanticaLabs">http://themeforest.net/user/QuanticaLabs</a>).<br/> 
+                        We aim to answer all questions within <strong>24 hours</strong>. In some cases the waiting time can be extended to <strong>48 hours</strong>.
+                    </div>
+                
+                </div>                
+                
+            </div>
+            
+            <div class="footer">
+                <a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs">&copy; 2012 QuanticaLabs</a>
+            </div>
+            
+        </div>
+        
+        <div>
+        
+            <input type="hidden" id="open-tabs" value="1" />
+        
+        </div>
+        
+    </body>
+    
+</html>
